@@ -3,6 +3,7 @@ from PIL import Image
 
 MAX_WIDTH = 250
 QUALITY = 80
+
 def compress_and_resize_images(root_dir):
     # Iterate through all subdirectories and files
     for root, dirs, files in os.walk(root_dir):
@@ -31,5 +32,5 @@ def compress_and_resize_images(root_dir):
                 compressed_image.close()
 
 if __name__ == "__main__":
-    root_directory = r"D:\netcadweb\Belnet\Ekler\Dosyalar\geofenis_is"  # Replace with your root directory path
+    root_directory = r"root_path"  # Replace with your root directory path
     compress_and_resize_images(root_directory)
